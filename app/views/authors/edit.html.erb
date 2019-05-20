@@ -3,11 +3,21 @@
 <%= form_for @author, url:{action: 'update'} do |author|%> 
 <%= author.label :first_name%>
 <%= author.text_field :first_name %>
+
 <%= author.label :last_name%>
 <%= author.text_field :last_name %>
+
 <%= author.label :location%>
 <%= author.text_field :location %> 
+
 <%= author.label :nickname%>
 <%= author.text_field :nickname %>
+
+<%= author.label :home_town%>
+<%= author.text_field :home_town %>
+
+<%= author.label :age%>
+<%= author.text_field :age %>
+
 <%= author.submit 'Save'%> 
 <% end %>
