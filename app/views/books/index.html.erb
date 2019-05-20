@@ -1,14 +1,14 @@
 
 
-<h1> YIPEEEEE </h1> 
+<h1> <%= @author.first_name%>'s Books' </h1> 
 <h2>
-<%= link_to "Create a book", new_book_path %> 
+<%= link_to "Create a book", new_author_book_path(@author) %> 
 </h2>
 
 <% @books.each do |book| %> 
 
 <h3>
-<%= link_to book.title, book_path(book)%> 
+<%= link_to book.title, author_book_path(@author, book)%> 
 </h3>
 
 <!-- <p> -->
