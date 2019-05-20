@@ -1,0 +1,9 @@
+<h1> Add new patient</h1> 
+
+<%= form_for @patient, url:{action: 'create'} do |patient|%> 
+<%= patient.text_field :first_name %>
+<%= patient.text_field :last_name %>
+<%= patient.text_field :diagnosis %>
+<%= patient.date_field :born_on %>  
+<%= patient.submit 'Save'%> 
+<% end %> 

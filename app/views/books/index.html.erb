@@ -1,0 +1,17 @@
+
+
+<h1> YIPEEEEE </h1> 
+<h2>
+<%= link_to "Create a book", new_book_path %> 
+</h2>
+
+<% @books.each do |book| %> 
+
+<h3>
+<%= link_to book.title, book_path(book)%> 
+</h3>
+
+<!-- <p> -->
+<%# book.author %> 
+<!-- </p> -->
+<% end %> 
